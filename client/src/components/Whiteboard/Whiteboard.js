@@ -73,7 +73,6 @@ const WhiteBoard = () => {
 
         elements.forEach(({ roughElement }) => {
             context.globalAlpha = "1";
-            //console.log(roughElement);
             context.strokeStyle = roughElement.options.stroke;
             roughCanvas.draw(roughElement);
         });
@@ -119,7 +118,6 @@ const WhiteBoard = () => {
                     clientX < point.clientX + 10 &&
                     clientX > point.clientX - 10
                 ) {
-                    //console.log("Popped");
                     newPath.splice(index, 1);
                     setPopped(true);
                     setPath(newPath);
