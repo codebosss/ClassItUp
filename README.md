@@ -5,7 +5,6 @@
     <img src="https://fontmeme.com/permalink/211115/e71b0f686a5f60f2f311f196de2f973a.png" alt="samarkan-font" border="0">
   </a>
   <h3 align="center">E-class Assistance Platform</h3>
-
 </p>
 
 
@@ -60,7 +59,7 @@
 
 2. Clone the repo
    ```sh
-   git clone https://github.com/d-realcoder/ClassItUp.git
+   git clone https://github.com/codebosss/ClassItUp.git
    ```
 3. Install NPM packages
    ```sh
@@ -69,7 +68,7 @@
 4. Enter your API in '.env'
    ```
     Check .env.example file for format for secrets and API keys
-   ```   ```
+   ```
 
 
 
@@ -108,10 +107,12 @@ Performance analytics is based on the combined data from the verbal as well as n
 * Database
     * MongoDB Atlas
 * APIs
-    * Route Mobile APIs
     * Symbl.ai
     * Words API
     * Komprehend’s NLP API
+    * Daily API
+* Deployment
+    * RedHat's OpenShift   
 
 ### Applications:
 Following are the real world applications of our idea.
@@ -120,8 +121,6 @@ Following are the real world applications of our idea.
 - Timely notifications are sent via email, SMS and whatsapp to both the students and the teachers so that no one misses a session and assignments.
 - Teachers can view detailed report of how interactive the class is. On the basis of that they get suggestion report to make positive changes in their teaching
 - Compare visual data between different classroom sessions
-
-
 
 
 ### Final Result: 
@@ -133,16 +132,13 @@ Providing more features to the students regarding peer chatting.
 Detailed analysis and solution to the problems detected during assessment.
 Scaling the application for a diaspora of users connected with interviews, interrogation and presentations.
 Peer to peer communication and comparison among friends from friend’s list.
-Adding customer support using Route Mobile Voice API.
-Much More Efficient use of Route Mobile Whatsapp API
+Adding customer support.
 Sending suggestions to teacher and students according to classroom session via whatsapp/email/sms
-
-
 
 ## Contact
 
 - Abhinav Tripathi - abhi3pathi01@gmail.com
-- Harsh Pandey - 
+- Harsh Pandey - harshpandey011@gmail.com
 - Anmol Sahu - anmolsahu2k@gmail.com
 
 Project Link: [https://github.com/d-realcoder/ClassItUp](https://github.com/d-realcoder/ClassItUp)
