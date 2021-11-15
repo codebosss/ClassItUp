@@ -32,7 +32,7 @@ export const sendEmail = (req, res, roomId, email) => {
             "token": "aZ4Voo7ssZNwnCdXxwWc0uwk",
             "smtp_user_name": "smtp56728640",
             "message": {
-                "html": `The class has started! Please join the class by clicking on this link: http://localhost:5000/videoCall/${roomId}`,
+                "html": `The class has started! Please join the class by clicking on this link: http://class-it-up-brightestcrocodile-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/videoCall/${roomId}`,
                 "text": "Please Join the meeting",
                 "subject": "ClassRoom session Link",
                 "from_email": "noreply@rapidemail.rmlconnect.net",
