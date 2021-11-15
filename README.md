@@ -4,7 +4,7 @@
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="https://fontmeme.com/permalink/211115/e71b0f686a5f60f2f311f196de2f973a.png" alt="samarkan-font" border="0">
   </a>
-  <h3 align="center">Video Analyzer Platform</h3>
+  <h3 align="center">E-class Assistance Platform</h3>
 
 </p>
 
