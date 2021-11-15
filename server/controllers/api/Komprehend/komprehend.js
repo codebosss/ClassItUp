@@ -46,7 +46,6 @@ export const getSarcasmAnalysis = (text) => {
                 console.log("insideGetSarcasm", body);
                 resolve(body)
             }
-            // res.status(200).json({ message: body.messages })
         });
     })
 
