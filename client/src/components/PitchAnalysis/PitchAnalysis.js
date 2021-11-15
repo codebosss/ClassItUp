@@ -26,7 +26,6 @@ const PitchAnalysis = () => {
         e.preventDefault()
         const data = new FormData();
         data.append('meetingName', formData.meetingName)
-        console.log(formData.meetingName, "iiiiiiiiiiiiiiiii")
         data.append('fileName', formData.fileName)
         data.append('file', formData.file);
         data.append('url', formData.url)
@@ -35,9 +34,6 @@ const PitchAnalysis = () => {
     }
 
     const handleRoomSubmit = (e) => {
-        // const data = classFormData;
-        // console.log(data);
-        // dispatch(joincall(data))
         if (!isJoinedRoom) {
             window.open(`/videoCall/${roomID}`, '_blank').focus();
             setJoinedRoom(true);
