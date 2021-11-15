@@ -64,13 +64,7 @@ const startPitchAnalysis = async (authToken, path, meetingName, callback) => {
                                 data['extraAnalysis'] = ans
                                 callback(null, data)
                             })
-                        // for (i = 0; i < data.messages.messages.length; i++) {
-                        // let emotion = await getEmotionAnalysis(data.messages.messages[i].text)
-                        // let sarcasm = await getSarcasmAnalysis(data.messages.messages[i].text)
-                        // let intent = await getIntentAnalysis(data.messages.messages[i].text)
-                        // let profaneWord = await getAbuseAnalysis(data.messages.messages[i].text)
-
-                        // }
+                        
 
                     })
                 fs.unlink(path, (err) => {
