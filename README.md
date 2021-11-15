@@ -21,18 +21,21 @@
       </ul>
     </li>
     <li>
+      <a href="#file-structure">File Structure</a>
+    </li>
+    <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#introduction">Introduction</a></li>
         <li><a href="#objective">Objective</a></li>
         <li><a href="#implementation">Implementation</a></li>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#technology-used">Technology Used</a></li>
+        <li><a href="#applications">Applications</a</li>
+        <li><a href="#final-result">Final Result</a</li>
+        <li><a href="#future-plans">Future Plans</a</li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -70,7 +73,28 @@
     Check .env.example file for format for secrets and API keys
    ```
 
-
+## File structure
+#### `client` - Holds the client application
+- #### `public` - This holds all of our static files
+- #### `src`
+    - #### `actions` - This folder holds actions to be dispatched
+    - #### `api` - This folder holds api integration with the server side of application
+    - #### `components` - This folder holds all of the different components that make up the frontend
+    - #### `constants` - These represent action types for reducers
+    - #### `reducers` - These represent the usage of redux.js for global store
+    - #### `App.js` - This is what renders all of our browser routes and different views
+    - #### `index.js` - This is what renders the react app by rendering App.js
+- #### `package.json` - Defines npm behaviors and packages for the client
+#### `server` - Holds the server application
+- #### `controllers` - These hold all of the callback functions that each route will call
+- #### `middleware` - This holds authentication middleware
+- #### `models` - This holds all of our data models
+- #### `public` - This folder is used as a temporary storage for uploaded file and client build
+- #### `routes` - This holds all of our HTTP to URL path associations for each unique url
+- #### `index.js` - Defines npm behaviors and packages for the client
+- #### `.env` - This holds our configuration files, like mongoDB uri
+#### `package.json` - Defines npm behaviors
+#### `.gitignore` - Tells git which files to ignore
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -127,18 +151,18 @@ Following are the real world applications of our idea.
 The outcome of our idea will be a platform where users(i.e. Students, Teachers) will be able to assess themselves or others on verbal and non-verbal aspects. A detailed analysis with user-friendly visualization will help different users in separate ways. Teachers can easily oraganize classes and students will be alerted in a timely manner
 
 ### Future Plans: 
-Weekly tasks for students to upscale their skills.
+- Weekly tasks for students to upscale their skills.
 Providing more features to the students regarding peer chatting. 
-Detailed analysis and solution to the problems detected during assessment.
-Scaling the application for a diaspora of users connected with interviews, interrogation and presentations.
-Peer to peer communication and comparison among friends from friend’s list.
-Adding customer support.
-Sending suggestions to teacher and students according to classroom session via whatsapp/email/sms
+- Detailed analysis and solution to the problems detected during assessment.
+- Scaling the application for a diaspora of users connected with interviews, interrogation and presentations.
+- Peer to peer communication and comparison among friends from friend’s list.
+- Adding customer support.
+- Sending suggestions to teacher and students according to classroom session via whatsapp/email/sms
 
 ## Contact
 
 - Abhinav Tripathi - abhi3pathi01@gmail.com
-- Harsh Pandey - harshpandey011@gmail.com
 - Anmol Sahu - anmolsahu2k@gmail.com
+- Harsh Pandey - harshpandey011@gmail.com
 
-Project Link: [https://github.com/d-realcoder/ClassItUp](https://github.com/d-realcoder/ClassItUp)
+Project Link: [https://github.com/codebosss/ClassItUp](https://github.com/codebosss/ClassItUp)
