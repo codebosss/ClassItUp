@@ -48,6 +48,7 @@ export const getRoom = (req, res) => {
             console.log("hi")
 
             NotificationService.findStudents({ role: 'student' }).then(async (students) => {
+                console.log(students,"****")
                 const email = students.map((student) => {
                     return {
                         email: student.email,
@@ -58,11 +59,13 @@ export const getRoom = (req, res) => {
                 const name = students.map((student) => {
                     return student.name
                 })
+                console.log(name,"++++")
                 console.log(email, "////////")
                 let phoneStr = ''
                 const phone = students.map((student) => {
                     return phoneStr += student.phone + "%2C"
                 })
+                console.log(phone,"---------")
                 let number = phone[0].substring(0, phone[0].length - 3)
                 await NotificationController.sendEmail(req, res, roomId, email)
                 await NotificationController.sendSms(number)
