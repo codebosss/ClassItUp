@@ -26,6 +26,7 @@ const PitchAnalysis = () => {
         e.preventDefault()
         const data = new FormData();
         data.append('meetingName', formData.meetingName)
+        console.log(formData.meetingName, "iiiiiiiiiiiiiiiii")
         data.append('fileName', formData.fileName)
         data.append('file', formData.file);
         data.append('url', formData.url)
@@ -34,6 +35,9 @@ const PitchAnalysis = () => {
     }
 
     const handleRoomSubmit = (e) => {
+        // const data = classFormData;
+        // console.log(data);
+        // dispatch(joincall(data))
         if (!isJoinedRoom) {
             window.open(`/videoCall/${roomID}`, '_blank').focus();
             setJoinedRoom(true);
@@ -73,8 +77,8 @@ const PitchAnalysis = () => {
                         <div className={classes.paper}>
                             <form onSubmit={handleSubmit} className={classes.form}>
                                 <TextField className={classes.input} name='meetingName' value={formData.meetingName} onChange={handleChange} variant="outlined" required fullWidth label='Meeting Name' />
-                                <TextField className={classes.input} name='url' value={formData.url} onChange={handleChange} variant="outlined" fullWidth label='URL' />
-                                <Typography style={{ marginLeft: '13rem', fontSize: '30px' }} className={classes.submit} fullWidth>OR</Typography>
+                                {/* <TextField className={classes.input} name='url' value={formData.url} onChange={handleChange} variant="outlined" fullWidth label='URL' /> */}
+                                {/* <Typography style={{ marginLeft: '13rem', fontSize: '30px' }} className={classes.submit} fullWidth>OR</Typography> */}
 
                                 <>
                                     <input
@@ -120,7 +124,7 @@ const PitchAnalysis = () => {
                                 </Typography>
                             </ThemeProvider>
                             <TextField className={classes.input} name='className' value={formData.className} onChange={handleClassChange} variant="outlined" required fullWidth label='Class Name' />
-                            {!isJoinedRoom ? 
+                            {!isJoinedRoom ?
                                 <Button variant="contained" color="primary" component="span" onClick={handleRoomSubmit}>
                                     Join Room
                                 </Button> : ''
@@ -130,7 +134,7 @@ const PitchAnalysis = () => {
                             {
                                 isJoinedRoom && iswhiteboardOpen ?
                                     <>
-                                
+
                                     </> :
                                     <>
                                         <Button variant="contained" color="primary" style={{ marginLeft: '5px' }} component="span" onClick={handleOpenWhiteboard}>
