@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = axios.create({ baseURL: 'http://localhost:5000/' });
+const API = axios.create({ baseURL: 'https://class-it-up-brightestcrocodile-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/' });
 
 API.interceptors.request.use((req) => {
     if (localStorage.getItem('profile')) {
