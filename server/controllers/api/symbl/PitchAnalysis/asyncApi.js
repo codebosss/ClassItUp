@@ -211,7 +211,7 @@ export const sendVideoData = async (req, res) => {
                                             let i;
                                             for (i = 0; i < messageData.length; i++) {
                                                 let tempEmotion = data.extraAnalysis.emotion[0].emotion[i]
-                                                let tempIntent = data.extraAnalysis.intent[0]?.intent
+                                                let tempIntent = data.extraAnalysis?.intent[0].intent
                                                 let tempProfane = data.extraAnalysis.profaneWord[0].abuse[i]
                                                 let tempSarcasm = data.extraAnalysis?.sarcasm[0][i]
                                                 messageData[i].emotion = Object.keys(tempEmotion).reduce((a, b) => tempEmotion[a] > tempEmotion[b] ? a : b)
@@ -236,7 +236,7 @@ export const sendVideoData = async (req, res) => {
                                             let i;
                                             for (i = 0; i < messageData.length; i++) {
                                                 let tempEmotion = data.extraAnalysis.emotion[0].emotion[i]
-                                                let tempIntent = data.extraAnalysis.intent[0]?.intent
+                                                let tempIntent = data.extraAnalysis?.intent[0].intent
                                                 let tempProfane = data.extraAnalysis.profaneWord[0].abuse[i]
                                                 let tempSarcasm = data.extraAnalysis?.sarcasm[0][i]
                                                 messageData[i].emotion = Object.keys(tempEmotion).reduce((a, b) => tempEmotion[a] > tempEmotion[b] ? a : b)
@@ -294,7 +294,7 @@ export const sendVideoData = async (req, res) => {
                                         let i;
                                         for (i = 0; i < messageData.length; i++) {
                                             let tempEmotion = data.extraAnalysis.emotion[0].emotion[i]
-                                            let tempIntent = data.extraAnalysis.intent[0]?.intent
+                                            let tempIntent = data.extraAnalysis?.intent[0].intent
                                             let tempProfane = data.extraAnalysis.profaneWord[0].abuse[i]
                                             let tempSarcasm = data.extraAnalysis?.sarcasm[0][i]
                                             messageData[i].emotion = Object.keys(tempEmotion).reduce((a, b) => tempEmotion[a] > tempEmotion[b] ? a : b)
@@ -320,7 +320,7 @@ export const sendVideoData = async (req, res) => {
                                         let i;
                                         for (i = 0; i < messageData.length; i++) {
                                             let tempEmotion = data.extraAnalysis.emotion[0].emotion[i]
-                                            let tempIntent = data.extraAnalysis.intent[0]?.intent
+                                            let tempIntent = data.extraAnalysis?.intent[0].intent
                                             let tempProfane = data.extraAnalysis.profaneWord[0].abuse[i]
                                             let tempSarcasm = data.extraAnalysis?.sarcasm[0][i]
                                             messageData[i].emotion = Object.keys(tempEmotion).reduce((a, b) => tempEmotion[a] > tempEmotion[b] ? a : b)
