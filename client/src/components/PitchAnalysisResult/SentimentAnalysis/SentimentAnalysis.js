@@ -97,10 +97,9 @@ const SentimentAnalysis = () => {
                                         <Typography className={classes.liItems}>{message.text}</Typography>
                                         <span style={{ display: 'block' }}>
                                             <Chip style={{ backgroundColor: 'orange', marginLeft: '1rem', fontSize: '18px' }} label={getEmotionLabel(message.emotion, index)} color="primary" />
-                                            <Chip style={{ backgroundColor: 'green', marginLeft: '1rem', fontSize: '18px' }} label={getIntentLabel(message.intent)} color="primary" />
+                                            {message.intent ? (<Chip style={{ backgroundColor: 'green', marginLeft: '1rem', fontSize: '18px' }} label={getIntentLabel(message.intent)} color="primary" />) : ''}
                                             <Chip style={{ marginLeft: '1rem', fontSize: '18px' }} label={getProfaneLabel(message.profane)} color="primary" />
-                                            <Chip style={{ backgroundColor: 'dodgerblue', marginLeft: '1rem', fontSize: '18px' }} label={getSarcasmLabel(message.sarcasm)} color="primary" />
-                                            <Button onClick={() => seekTo(message.startTime)}>Seek</Button>
+                                            {message.sarcasm ? (<Chip style={{ backgroundColor: 'dodgerblue', marginLeft: '1rem', fontSize: '18px' }} label={getSarcasmLabel(message.sarcasm)} color="primary" />) : ''}                                            <Button onClick={() => seekTo(message.startTime)}>Seek</Button>
                                         </span>
                                     </span>
                                 </li>);
